@@ -10,5 +10,8 @@ let package = Package(
           dependencies: ["IOYesCore"]
       ),
       Target(name: "IOYesCore")
+    ],
+    dependencies: [
+        .Package(url: "https://github.com/vapor/console.git", majorVersion: 2)
     ]
 )
